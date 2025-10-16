@@ -18,7 +18,7 @@ function renderBooks() {
     const editBtn = document.createElement('button');
     editBtn.textContent = "Modifier titre";
     editBtn.onclick = () => {
-      const newTitle = prompt("Entrez le nouveau titre :", book.title);
+      const newTitle = prompt("Entrez le nouveau titre du livre :", book.title);
       if (newTitle !== null && newTitle.trim() !== '') {
         book.title = newTitle.trim();
         renderBooks();
